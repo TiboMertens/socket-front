@@ -6,7 +6,7 @@ let newMessage = ref('');
 let socketServer = null;
 
 onMounted(() => {
-    socketServer = new WebSocket('wss://localhost:3000/primus');
+    socketServer = new WebSocket('wss://socket-api-xbq5.onrender.com/primus');
     
     //listen for messages
     socketServer.onmessage = function (event) {
